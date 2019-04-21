@@ -8,9 +8,13 @@ function handleClick(event) {
 }
 
 function changePicture(picture) {
-    document.querySelector('.list_item__selected').classList.remove("list_item__selected");
+    document.querySelector('.list_item').classList.remove("list_item__selected");
     document.getElementById('picture').src = 'images/' + picture;
     document.querySelector(`[data-picture="${picture}"]`).classList.add("list_item__selected");
+}
+
+function init() {
+    handleClick({target: {dataset: {picture: "cat1.jpg"}}});
 }
 
 window.onpopstate = function() {
