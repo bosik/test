@@ -1,0 +1,32 @@
+.content {
+    display: flex;
+    padding: 10px;
+}
+
+.list {
+    margin: 0;
+    padding-left: 0;
+}
+
+.list_item {
+    list-style-type: none;
+    cursor: pointer;
+    color: #688bff;
+    font-size: 24px;
+    line-height: 1.5;
+}
+
+.list_item__selected {
+    color: #1127ff;
+}
+
+.picture-wrapper {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.picture {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
